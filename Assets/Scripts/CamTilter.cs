@@ -19,9 +19,9 @@ public class CamTilter : MonoBehaviour
     }
     if (tilt < 0.0 && currTilt > tiltMin ||
         tilt > 0.0 && currTilt < tiltMax) {
-      Debug.Log(transform.eulerAngles.ToString() + " + " + tilt.ToString());
+      // Debug.Log(transform.eulerAngles.ToString() + " + " + tilt.ToString());
       transform.Rotate(tilt, 0, 0);
-      Debug.Log(transform.eulerAngles);
+      // Debug.Log(transform.eulerAngles);
     }
   }
 }
