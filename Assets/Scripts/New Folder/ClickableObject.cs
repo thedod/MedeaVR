@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using HighlightPlus;
 
+
 public class ClickableObject : MonoBehaviour
 {
+
     private HighlightEffect highlightEffect;
-    private bool wasClicked;
+    public bool wasClicked;
 
     void Start()
     {
@@ -14,7 +16,7 @@ public class ClickableObject : MonoBehaviour
 
         // Get the renderer and material of the object
         highlightEffect = GetComponent<HighlightEffect>();
-        highlightEffect.enabled = true;
+        highlightEffect.glow = 5f;
     }
 
     void Update()
@@ -49,9 +51,19 @@ public class ClickableObject : MonoBehaviour
     // Function that gets triggered when the object is clicked
     void OnObjectClicked()
     {
-        Debug.Log(gameObject.name + " was clicked!");
+        AppManager.instance.currentScene += 1;
+        AppManager.instance.SceneNumberText.text = "Scene : " + AppManager.instance.currentScene.ToString();
+
         wasClicked = true;
-        highlightEffect.enabled = false;
+
+        highlightEffect.glow = 0f;
+        highlightEffect.overlay = 0f;
+
+        AppManager.instance.objectsCamera.LookAt = gameObject.transform;
+        AppManager.instance.objectsCamera.Follow = gameObject.transform;
+
+        AppManager.instance.DeactivateScene();
+
 
     }
 
