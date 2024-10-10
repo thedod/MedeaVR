@@ -17,7 +17,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            AppManager.instance.playerCamera.LookAt = null;
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            AppManager.instance.playerCamera.LookAt = null;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            AppManager.instance.playerCamera.LookAt = null;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            AppManager.instance.playerCamera.LookAt = null;
+        }
     }
 
 
