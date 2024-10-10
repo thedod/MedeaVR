@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4e554cf4c7b45d2a62a4ec0c060acd, type: 3}
+  m_Name: SceneMedia
+  m_EditorClassIdentifier: 
+  sceneNumber: 1
+  radioAudioClip: {fileID: 8300000, guid: b471fad0212b74378ac1610267757026, type: 3}
+  newspaperAudioClip: {fileID: 8300000, guid: b471fad0212b74378ac1610267757026, type: 3}
+  newspaperImage: {fileID: 2800000, guid: 6a32847cb7f3f4941ae8cb92066394e1, type: 3}
+  phoneVideo: {fileID: 32900000, guid: 8698ec1dda8544525b79f6ccdfac0f2f, type: 3}
+  tVVideo: {fileID: 32900000, guid: 49ea361807b4a47619d19e8f711f71a3, type: 3}
+  medeaAudioClips:
+  - {fileID: 8300000, guid: f74fd53a070674319af372f500a9baae, type: 3}
+  - {fileID: 8300000, guid: a5bb7a30997fb4ad9b29670ba06545a2, type: 3}
+  - {fileID: 8300000, guid: 630819c5943684ac596783ae8c332e39, type: 3}
+  - {fileID: 8300000, guid: dd4637e686653461d8b53a90e625d8f0, type: 3}
+  choirAudioClips:
+  - {fileID: 8300000, guid: 767bcc2878f4046c7847039914c72225, type: 3}
